@@ -65,7 +65,7 @@
       "inputPrompt": "",
       "tooltip": "\u003cp\u003eSpecify the default Docker image that will be used by all Packets that don\u0027t override this default\u003c/p\u003e\n\u003cp\u003eValue by default is \u003ci\u003equay.io/jeroenmanders/docker-infraxys-provisioning-server:latest\u003c/i\u003e\u003c/p\u003e",
       "scope": "Instance",
-      "defaultValue": "quay.io/jeroenmanders/docker-infraxys-provisioning-server:latest"
+      "defaultValue": "quay.io/jeroenmanders/infraxys-provisioning-server:ubuntu-full-18.04-latest"
     },
     {
       "name": "environment_scripts_root",
@@ -126,6 +126,26 @@
       "tooltip": "",
       "scope": "Instance",
       "defaultValue": "/opt/infraxys"
+    },
+    {
+      "name": "ssh_key_variable_name",
+      "caption": "Ssh key variable",
+      "type": "java.lang.String",
+      "formColumn": 2,
+      "formOrder": 2100,
+      "visibility": "ALWAYS VISIBLE",
+      "writability": "ALWAYS",
+      "required": true,
+      "isPartOfKey": false,
+      "listOfValues": "",
+      "newItemsAllowed": false,
+      "parseWithVelocity": false,
+      "cloneAttribute": true,
+      "autoExport": true,
+      "inputPrompt": "",
+      "tooltip": "\u003cp\u003eSpecify the name of the variable that contains the private key for access to this server. The variable can be defined in the current environment or in any of the parent-projects\u003c/p\u003e",
+      "scope": "Instance",
+      "defaultValue": ""
     }
   ],
   "files": [],
