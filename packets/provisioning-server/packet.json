@@ -89,11 +89,11 @@
     },
     {
       "name": "modules_directory",
-      "caption": "Modules ",
+      "caption": "Modules",
       "type": "java.lang.String",
       "formColumn": 2,
       "formOrder": 2200,
-      "visibility": "NOT VISIBLE",
+      "visibility": "ALWAYS VISIBLE",
       "writability": "ALWAYS",
       "required": true,
       "isPartOfKey": false,
@@ -105,7 +105,7 @@
       "inputPrompt": "",
       "tooltip": "",
       "scope": "Instance",
-      "defaultValue": "/opt/vecbuilder/modules"
+      "defaultValue": "/opt/infraxys-provisioning-server/modules"
     },
     {
       "name": "root_directory",
